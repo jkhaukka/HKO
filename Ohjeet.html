@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.3.5.2 (MacOSX)"/>
+	<meta name="author" content="Haukka, Jari Kalevi"/>
+	<meta name="created" content="2020-04-14T10:10:00"/>
+	<meta name="changed" content="2020-04-16T09:23:39.601153891"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 2cm; margin-top: 2.5cm; margin-bottom: 2.5cm }
+		p { margin-bottom: 0.25cm; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		h3 { margin-top: 0.49cm; margin-bottom: 0.49cm; direction: ltr; text-align: left; orphans: 2; widows: 2; background: transparent }
+		h3.western { font-family: "Times New Roman", serif; font-size: 13pt; font-weight: bold }
+		h3.cjk { font-family: "Times New Roman"; font-size: 13pt; so-language: fi-FI; font-weight: bold }
+		h3.ctl { font-family: "Times New Roman"; font-size: 13pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; direction: ltr; text-align: left; orphans: 2; widows: 2; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt; font-weight: bold }
+		h2.cjk { font-family: "PingFang SC"; font-size: 16pt; font-weight: bold }
+		h2.ctl { font-family: "Arial Unicode MS"; font-size: 16pt; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="fi-FI" link="#000080" vlink="#800000" dir="ltr"><h2 class="western">
+Ohjeita ja tietoa sovelluksesta</h2>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western" style="margin-top: 0cm; font-weight: normal"><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Käyttöliittymän
+vasen palkki sisältää datan haun määritykset (ohjeita alla).</font></font></font></h3>
+<h3 class="western" style="margin-top: 0cm; font-weight: normal"><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Oikealla
+ylimpänä on dataa kuvaava grafiikka, jonka alla on painike datan
+lataamiseen csv-muodossa (maksimi 100 riviä).</font></font></font></h3>
+<h3 class="western" style="margin-top: 0cm; font-weight: normal"><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Data-osiossa
+näytetään haun haun tuloksena oleva data (maksimi 100 riviä).
+Tulokset voi järjestää tietyn kentän mukaan klikkaamalla kentän
+nimeä. ”Search” kentän avulla voi hakea rivit jotka sisältävä
+haettavan sanan. Voidaan myös valita kerralla näytettävien rivien
+lukumäärä (”Show entries”).</font></font></font></h3>
+<h3 class="western" style="margin-top: 0cm"><br/>
+<br/>
+
+</h3>
+<h3 class="western" style="margin-top: 0cm">Ohjeita hakujen
+tekemiseen</h3>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Valinta
+'Ajanjakso' kohdistaa haun vain valitun jakson konsertteihin.</font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Kirjoita
+kenttää 'Haku' hakulause. Haussa käytetään säännöllistä
+lauseketta, jonka ominaisuuksiin on syytä perehtyä halutessaan
+saada suurimman hyödyn sovelluksesta.</font></font></font></p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Haussa
+käytetään R kielen funktioita. </font></font></font>
+</p>
+<ul>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Esim.
+	haku ”grepl('Jalas',Kapellimestari)” hakee rivit, joissa
+	kentässä ”Kapellimestari” on merkkijono ”Jalas”. </font></font></font>
+	</p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Esim.
+	haku ”grepl('Jalas',Kapellimestari) &amp;
+	!grepl('Sibelius',Säveltäjä)” hakee rivit, joissa kentässä
+	”Kapellimestari” on merkkijono ”Jalas” JA kentässä
+	”Säveltäjä ei ole merkkijonoa ”Sibelius”.</font></font></font></p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Teos
+	kohtaisesti käytössä ovat seuraavat kentät: ”ID&quot;,
+	&quot;Aloitusaika&quot;, &quot;Esitysjärjestys&quot;, &quot;Päivämäärä&quot;,
+	&quot;Kapellimestari&quot;, &quot;Säveltäjä&quot;, &quot;TeosNimi&quot;,
+	&quot;Sovittaja&quot;, &quot;Orkesteri&quot;, &quot;Solisti&quot;,
+	&quot;KonsNimike&quot;, &quot;Konserttipaikka&quot;, &quot;Tietoa&quot;,
+	&quot;Tietoa.Lisa&quot;, &quot;pvm&quot;, &quot;aika&quot;, &quot;ROWID”</font></font></font></p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Konsertti
+	kohtaisesti: ”ID&quot;, &quot;aika&quot;, &quot;pvm&quot;,
+	&quot;Säveltäjä&quot;, &quot;Kapellimestari&quot;, &quot;TeosNimi&quot;,
+	&quot;Solisti&quot;, &quot;Info”</font></font></font><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font></font><br/>
+<br/>
+
+	</p>
+</ul>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff"><a name="_GoBack"></a>
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Valinta
+'Säveltäjä', voit valita yhden tai useampia. </font></font></font><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt"><b>Huom!</b></font></font></font><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">
+nimellä voi olla useita kirjoitusasuja.<br/>
+</font></font></font><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">'Kuviotyyppi'
+valikon 'Aikasarja' esittää hakujen tulokset vuosittaisina
+lukumäärinä hajontakuviossa, 'Lukumäärät' esittää
+pylväskuviot.</font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Painike
+’Toteuta’ tekee haun.<br/>
+</font></font></font><br/>
+
+</p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">'Lisävalinnat'
+sisältää seuraavat määritykset:</font></font></font></p>
+<ul>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333">’<font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Muuttujat’
+	määrittää minkä muuttujan suhteen kuvio tuotetaan</font></font></font></p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333">’<font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Koko
+	konsertti’ määrittää tehdäänkö haku koko konsertista vai
+	yksittäisestä teoksesta. Tämä mahdollistaa esim. löytämään
+	konsertit, joissa on esitetty vaikkapa kahden eri säveltäjän
+	teoksia. </font></font></font>
+	</p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333">’<font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Liukuvan
+	keskiarvon ikkuna’ määrittää 'Aikasarja' kuvion liukuvan
+	keskiarvon ikkunan leveyden.</font></font></font></p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333">’</font> <font face=""><span lang="ar-SA"><font color="#333333"><font face="Courier New"><font size="2" style="font-size: 10pt">﻿</font></font></font></span></font><font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Montako
+	riviä näytetään’ määrittää teksiosassa näytettävien
+	rivien määrän</font></font></font></p>
+	<li><p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+	<font color="#333333">’<font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Kieli’
+	määrittää käyttöliittymän kielen</font></font></font></p>
+</ul>
+<h3 class="western">Tekijät</h3>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Aleksi
+Haukka <a href="mailto:aleksi.haukka@helsinki.fi">aleksi.haukka@helsinki.fi</a></font></font></font></p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<font color="#333333"><font face="Helvetica Neue, serif"><font size="2" style="font-size: 10pt">Jari
+Haukka <a href="mailto:jari.haukka@iki.fi">jari.haukka@iki.fi</a></font></font></font></p>
+<p style="margin-bottom: 0.26cm; line-height: 100%; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
